@@ -6,7 +6,7 @@ function App() {
       <div className="calculator-grid">
         <div className="output">
           <div className="previous-operand"></div>
-          <div className="current-operand"></div>
+          <div className="current-operand">0</div>
         </div>
 
         <button className="span-two">AC</button>
@@ -26,7 +26,7 @@ function App() {
         <button>-</button>
         <button>0</button>
         <button>.</button>
-        <button className="span-two">=</button>
+        <button className="span-two-equal span-two">=</button>
       </div>
     </div>
   );
