@@ -13,3 +13,10 @@ body {
   grid-template-columns: repeat(4, 6rem);
   grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
 }
+
+.span-two {
+  grid-column: span 2;
+}
+.output {
+  grid-column: 1 / -1;
+}
