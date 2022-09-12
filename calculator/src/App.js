@@ -42,6 +42,8 @@ const App = () => {
     e.preventDefault();
     const value = e.target.innerHTML;
 
+    /* It's checking if the length of the number is less than 16. If it is, it will add the number to the
+ end of the current value of the display. */
     if (removeSpaces(calc.num).length < 16) {
       setCalc({
         ...calc,
