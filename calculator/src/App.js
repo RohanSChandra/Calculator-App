@@ -33,6 +33,11 @@ const App = () => {
     res: 0,
   });
 
+  /**
+   * We're going to take the value of the button that was clicked, and add it to the end of the current
+   * value of the display.
+   * @param e - the event object
+   */
   const numClickHandler = (e) => {
     e.preventDefault();
     const value = e.target.innerHTML;
