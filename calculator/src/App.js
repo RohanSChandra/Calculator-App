@@ -13,9 +13,17 @@ const btnValues = [
   [0, ".", "="],
 ];
 
+/**
+ * It takes a number and returns a string with a space between every three digits
+ * @param num - The number to be converted to a string.
+ */
 const toLocaleString = (num) =>
   String(num).replace(/(?<!\..*)(\d)(?=(?:\d{3})+(?:\.|$))/g, "$1 ");
 
+/**
+ * Remove all spaces from a number.
+ * @param num - The number to be formatted.
+ */
 const removeSpaces = (num) => num.toString().replace(/\s/g, "");
 
 const App = () => {
