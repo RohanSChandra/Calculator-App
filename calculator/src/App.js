@@ -58,6 +58,10 @@ const App = () => {
     }
   };
 
+  /**
+   * If the number doesn't already have a decimal point, add one
+   * @param e - the event object
+   */
   const commaClickHandler = (e) => {
     e.preventDefault();
     const value = e.target.innerHTML;
@@ -68,6 +72,11 @@ const App = () => {
     });
   };
 
+  /**
+   * When the user clicks on a sign, the sign is set to the value of the button clicked, the result is
+   * set to the number if there is a number and the number is set to 0
+   * @param e - the event object
+   */
   const signClickHandler = (e) => {
     e.preventDefault();
     const value = e.target.innerHTML;
