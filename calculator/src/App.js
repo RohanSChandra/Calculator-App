@@ -1,5 +1,23 @@
+import Wrapper from "./components/Wrapper";
+import Screen from "./components/Screen";
+import ButtonBox from "./components/ButtonBox";
+import Button from "./components/Button";
+
 function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <Wrapper>
+      <Screen value="0" />
+      <ButtonBox>
+        <Button
+          className=""
+          value="0"
+          onClick={() => {
+            console.log("Button Clicked");
+          }}
+        />
+      </ButtonBox>
+    </Wrapper>
+  );
 }
 
 export default App;
