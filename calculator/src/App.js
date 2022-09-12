@@ -89,6 +89,10 @@ const App = () => {
     });
   };
 
+  /**
+   * If the calculator has a sign and a number, then do the math and set the result as the new result,
+   * clear the sign and number
+   */
   const equalsClickHandler = () => {
     if (calc.sign && calc.num) {
       const math = (a, b, sign) =>
@@ -118,6 +122,9 @@ const App = () => {
     }
   };
 
+  /**
+   * It takes the current value of the calculator, and if it's not zero, it multiplies it by -1
+   */
   const invertClickHandler = () => {
     setCalc({
       ...calc,
@@ -127,6 +134,9 @@ const App = () => {
     });
   };
 
+  /**
+   * It takes the current number and divides it by 100
+   */
   const percentClickHandler = () => {
     let num = calc.num ? parseFloat(removeSpaces(calc.num)) : 0;
     let res = calc.res ? parseFloat(removeSpaces(calc.res)) : 0;
@@ -139,6 +149,9 @@ const App = () => {
     });
   };
 
+  /**
+   * It resets the calculator's state to its initial state
+   */
   const resetClickHandler = () => {
     setCalc({
       ...calc,
